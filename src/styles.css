@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(235, 18%, 26%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #242742;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+input,
+button {
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height: 56px;
+  width: 376px;
+  cursor: pointer;
+  outline: none;
+}
+
+button {
+  background-color: #242742;
+  color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+  background: linear-gradient(to top, hsl(4, 93%, 71%), hsl(19, 90%, 54%));
+  box-shadow: 0 20px 25px hsla(4, 100%, 67%, 0.5);
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+article {
+  background-color: #fff;
+  border-radius: 25px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 25px;
+  padding: 15px;
+}
+
+.illustration-mobile {
+  display: none;
+}
+
+.illustration-desktop {
+  display: block;
+}
+
+.content {
+  padding: 35px;
+  box-sizing: border-box;
+  align-self: center;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  gap: 12px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.labels {
+  margin-bottom: -10px;
+  display: flex;
+  justify-content: space-between;
+  width: 376px;
+}
+
+label, span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+figure {
+  margin: 0;
+}
+
+.error-input {
+  background-color: #ffe8e6;
+  border: 1px solid #ffb5af;
+}
+
+.error-input#email {
+  color: #f62714;
+}
+
+.visibility {
+  display: none;
+}
+
+/* Responsive design using media queries */
+@media (max-width: 375px) {
+
+  body{
+    background-color: #ffff;
+    font-size: 16px;
+  }
+  article{
+    gap: 35px;
+    padding: 5px;
+  }
+  .success{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  h1{
+    font-size: 30px;
+  }
+  .newsletter-signup {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .illustration-mobile {
+    display: block;
+  }
+
+  .illustration-desktop {
+    display: none;
+  }
+
+  .content {
+    padding: 0;
+    margin-left: 0;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  input,
+  button {
+    width: 80%;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  .labels {
+    width: 80%;
+  }
+}
