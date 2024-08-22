@@ -104,7 +104,7 @@ form {
   margin-bottom: -10px;
   display: flex;
   justify-content: space-between;
-  width: 376px;
+  width: inherit;
 }
 
 label, span {
@@ -125,38 +125,66 @@ figure {
   color: #f62714;
 }
 
+.success-message {
+  padding: 30px; /* Default padding */
+  width: 50%; 
+  display: flex; 
+  gap: 20px;  /* Default width for larger screens */
+}
+
 .visibility {
   display: none;
 }
 
 /* Responsive design using media queries */
-@media (max-width: 375px) {
+@media (max-width: 965px) {
 
-  body{
-    background-color: #ffff;
+  body {
+    background-color: #fff;
     font-size: 16px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
-  article{
+
+  main {
+    box-sizing: border-box;
+    margin: 0;
+    width: inherit;
+  }
+
+  article {
     gap: 35px;
-    padding: 5px;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
   }
-  .success{
+
+  .success {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  h1{
+
+  h1 {
     font-size: 30px;
+    text-align: start;
   }
+
   .newsletter-signup {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    width: 100%;
   }
 
   .illustration-mobile {
     display: block;
+    width: 100%;
+    img{
+      width: inherit;
+    }
   }
 
   .illustration-desktop {
@@ -166,20 +194,37 @@ figure {
   .content {
     padding: 0;
     margin-left: 0;
-    align-items: center;
+    padding: 10px;
     font-size: 16px;
+    width: 100%;
   }
 
   input,
   button {
-    width: 80%;
+    width: 100%;
   }
 
   form {
-    width: 80%;
+    width: 100%;
   }
 
   .labels {
-    width: 80%;
+    width: 100%;
+  }
+
+  .success-message {
+    width: 100%;   /* Full width on smaller screens */
+    padding: 20px; /* Adjusted padding for smaller screens */
+  }
+
+  .success {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // gap: 170px;
+
+    button{
+      display: block;
+    }
   }
 }
