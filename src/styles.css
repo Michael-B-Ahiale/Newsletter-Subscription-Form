@@ -38,7 +38,7 @@ body {
   height: 100vh;
   background-color: var(--charcoal-grey);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -188,6 +188,7 @@ figure {
     margin: 0;
     padding: 0;
     width: inherit;
+    height: 100vh;
   }
 
   article {
@@ -242,7 +243,7 @@ figure {
       width: 88%;
 
       img{
-        height: 15px;
+        height: 20px;
       }
     }
   }
