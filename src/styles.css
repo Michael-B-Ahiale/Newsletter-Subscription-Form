@@ -263,12 +263,12 @@ figure {
 
   .success-message {
     width: 100%;   /* Full width on smaller screens */
-    padding: 20px; /* Adjusted padding for smaller screens */
+    padding: 30px; /* Adjusted padding for smaller screens */
     height: 100vh;
   }
 
   .success {
-    height: 93vh;
+    height: 92vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -280,8 +280,8 @@ figure {
     }
    
     header{
-      width: 90%;
-      margin-top: 35%;
+      width: 100%;
+      margin-top: 45%;
     }
 
     button{
