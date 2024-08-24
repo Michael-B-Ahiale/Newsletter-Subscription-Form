@@ -208,6 +208,7 @@ figure {
   h1 {
     font-size: 30px;
     text-align: start;
+    width: 80%;
   }
 
   .newsletter-signup {
