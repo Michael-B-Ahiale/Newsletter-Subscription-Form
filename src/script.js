@@ -57,7 +57,7 @@ function showSuccessMessage(email) {
   figure.style.marginRight = '0';
 
   const img = document.createElement('img');
-  img.src = '../assets/images/icon-success.svg';
+  img.src = './assets/images/icon-success.svg';
   img.alt = 'success-icon';
   img.style.padding = '0';
 
