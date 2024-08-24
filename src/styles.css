@@ -10,9 +10,33 @@
   font-weight: bold;
 }
 
+
+:root {
+    /* Font */
+    --font-family: 'Roboto', sans-serif;
+    --font-size: 16px;
+    --font-normal: 400;
+    --font-bold: 700;
+
+    /* Colors */
+    /* PRIMARY */
+    --tomato: hsl(4, 100%, 67%);
+    --tomato-light: hsl(4, 100%, 95%);
+    /* NEUTRAL */
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+    /* GRADIENT */
+    --gradient-pink: #ff3e83;
+    --gradient-orange: #fd634a;
+    --gradient-shadow: #ff3e8355;
+}
+
+
 body {
   height: 100vh;
-  background-color: hsl(235, 18%, 26%);
+  background-color: var(--charcoal-grey);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -59,7 +83,7 @@ article {
   border-radius: 25px;
   box-sizing: border-box;
   display: flex;
-  gap: 25px;
+  gap: 15px;
   padding: 15px;
 }
 
@@ -73,12 +97,14 @@ article {
 
 .content {
   padding: 35px;
+  padding-right: 0px;
+  margin-right: 0px;
   box-sizing: border-box;
   align-self: center;
   margin-left: 15px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 ul {
@@ -104,7 +130,7 @@ form {
   margin-bottom: -10px;
   display: flex;
   justify-content: space-between;
-  width: inherit;
+  width: 376px;
 }
 
 label, span {
@@ -137,7 +163,7 @@ figure {
 }
 
 /* Responsive design using media queries */
-@media (max-width: 965px) {
+@media (max-width: 385px) {
 
   body {
     background-color: #fff;
@@ -150,6 +176,7 @@ figure {
   main {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     width: inherit;
   }
 
@@ -168,7 +195,7 @@ figure {
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 26px;
     text-align: start;
   }
 
@@ -182,8 +209,12 @@ figure {
   .illustration-mobile {
     display: block;
     width: 100%;
+    overflow: hidden;
     img{
       width: inherit;
+      height: auto;
+    object-fit: cover;
+    display: block;
     }
   }
 
@@ -192,11 +223,18 @@ figure {
   }
 
   .content {
-    padding: 0;
     margin-left: 0;
-    padding: 10px;
-    font-size: 16px;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 14px;
     width: 100%;
+    li{
+      width: 88%;
+
+      img{
+        height: 15px;
+      }
+    }
   }
 
   input,
@@ -218,10 +256,15 @@ figure {
   }
 
   .success {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // gap: 170px;
+   
+    header{
+      width: 90%;
+      margin-top: 40%;
+    }
 
     button{
       display: block;
