@@ -65,7 +65,7 @@ function showSuccessMessage(email) {
   header.appendChild(figure);
 
   const h1 = document.createElement('h1');
-  h1.textContent = 'Thanks for Subscribing';
+  h1.textContent = 'Thanks for subscribing!';
   header.appendChild(h1);
 
   const p = document.createElement('p');

@@ -206,7 +206,7 @@ figure {
   }
 
   h1 {
-    font-size: 26px;
+    font-size: 30px;
     text-align: start;
   }
 
@@ -273,6 +273,7 @@ figure {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    width: 98%;
 
     img{
       height: 50px;
@@ -280,7 +281,7 @@ figure {
     }
    
     header{
-      width: 100%;
+      
       margin-top: 45%;
     }
 
