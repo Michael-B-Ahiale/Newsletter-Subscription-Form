@@ -163,7 +163,7 @@ figure {
 }
 
 /* Responsive design using media queries */
-@media (max-width: 385px) {
+@media (max-width: 900px) {
 
   body {
     background-color: #fff;
@@ -191,7 +191,7 @@ figure {
   .success {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
   }
 
   h1 {
